@@ -1,5 +1,8 @@
 package dao;
 
+import org.springframework.stereotype.Component;
+
+@Component("dao")
 public class DAO implements IDAO{
     @Override
     public double getTemperature() {

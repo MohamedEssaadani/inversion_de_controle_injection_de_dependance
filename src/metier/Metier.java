@@ -1,8 +1,14 @@
 package metier;
 
 import dao.IDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+
+@Component("metier")
 public class Metier implements IMetier{
+
+    @Autowired
     private IDAO dao;
 
     public IDAO getDao() {
